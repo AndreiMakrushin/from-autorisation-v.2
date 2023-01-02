@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    behavior: smooth;
+}
+body{
+    transition: .5s;
+    display: flex;
+    background-color: black;
+}
+.form-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+.form1{
+    border-radius: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: linear-gradient(#e96443, #904e95);
+    display: flex;
+    max-width: 1200px;
+    max-height: 450px;
+    transition: .5s;
+}
+
+.sign{
+    border-radius: 20px;
+    
+    color: white;
+    background: linear-gradient(#e96443, #904e95);
+    z-index: 10;
+    transition: 0.5s;
+    position: relative;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 325px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.8s;
+}
+.sign h4{
+    font-size: 17px;
+    margin: 30px 0px 30px 0px;
+    color: white;
+}
+.sign button{
+    color: white;
+    background-color: #3a7bd5;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 15px 60px;
+    transition: 0.5s;
+}
+.sign button:hover{
+    cursor: pointer;
+    background-color: #2661b3;
+}
+.create{
+    border-radius: 20px;
+    color: white;
+    padding: 40px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    transition: 0.8s;
+    position: relative;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 325px;
+    height: 371px;
+}
+.create .images{
+    margin-top: 15px;
+}
+a{
+    color: white;
+    margin-top: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.create .inputs {
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-rows: 1;
+}
+.create .inputs input{
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    outline: white;
+}
+
+.create button{
+    color: white;
+    background-color: #3a7bd5;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 15px 60px;
+    transition: 0.5s;
+}
+.create button:hover{
+    cursor: pointer;
+    background-color: #2661b3;
+}
+.autosign{
+    transform: translateX(100%);
+    transition: 0.8s;
+    width: 50%;
+}
+.autocreate{
+    transform: translateX(-100%);
+    transition: 0.8s;
+    width: 50%;
+}
+.border-right{
+    border-right: 2px solid white;
+}
+.border-left{
+    border-left: 2px solid white;
+}
+.badly{
+    color: red;
+}
+.will-go{
+    color: orange;
+}
+.good{
+    color: green;
+}
+@media screen and (max-width: 560px){
+    .form1{
+        flex-wrap: wrap;
+        width: 325px;
+        max-height: 900px;
+    }
+    .autosign{
+        transform: translateY(100%);
+        transition: 0.8s;
+        width: 100%;
+        height: 309px;
+    }
+    .autocreate{
+        transform: translateY(-100%);
+        transition: 0.8s;
+        width: 100%;
+        height: 309px;
+    }
+    .border-bottom{
+        border-bottom: 2px solid white;
+    }
+    .border-top{
+        border-top: 2px solid white;
+    }
+}
